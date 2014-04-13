@@ -1,0 +1,13 @@
+@import "bourbon";
+
+// Font weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+// Base Font
+$base-font-family: "Montserrat",Helvetica, Arial, sans-serif;
+$base-font-weight: $regular;
+$base-line-height: 1.4;
+
+@import "modules/all";
