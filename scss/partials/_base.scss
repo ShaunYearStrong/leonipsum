@@ -5,9 +5,12 @@ $light: 300;
 $regular: 400;
 $bold: 700;
 
-// Base Font
+// Fonts
 $base-font-family: "Montserrat",Helvetica, Arial, sans-serif;
 $base-font-weight: $regular;
 $base-line-height: 1.4;
+
+//BG sprite
+$bg-sprite: url("/img/sprite.png");
 
 @import "modules/all";
