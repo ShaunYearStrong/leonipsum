@@ -11,17 +11,24 @@ var quotes,
     @param {Object} rng Optional RNG. Defaults to Math.
     @return {Array} The original array, shuffled.
 */
-function shuffle (array) {
-  var i = array.length, j, swap;
-  while (--i) {
-    j = Math.random() * (i + 1) || 0;
-    swap = array[i];
-    array[i] = array[j];
-    array[j] = swap;
+
+function shuffle(array) {
+  var unshuffled = array.length,
+      copy,
+      remaining;
+
+  // While there are unshuffled elements
+  while (unshuffled) {
+    // Get one that hasn't been replaced yet
+    remaining = Math.floor(Math.random() * unshuffled--);
+    // And replace it with the unshuffled element
+    copy = array[unshuffled];
+    array[unshuffled] = array[remaining];
+    array[remaining] = copy;
   }
+
   return array;
 }
-
 
 function getQuotes(p) {
 
