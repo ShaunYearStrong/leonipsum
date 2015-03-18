@@ -29,7 +29,7 @@ function getQuotes(p) {
         shuffled = shuffle(quotes),
         i;
 
-    for (i = 0; i < parseInt(p); i++) {
+    for (i = 0; i < p; i++) {
       leon.push('<p>' + shuffled[i] + '</p>');
     }
 
