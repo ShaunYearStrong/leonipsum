@@ -11,16 +11,14 @@ var quotes,
     @param {Object} rng Optional RNG. Defaults to Math.
     @return {Array} The original array, shuffled.
 */
-function shuffle (array, rng) {
+function shuffle (array) {
   var i = array.length, j, swap;
-  if (!rng) rng = Math;
   while (--i) {
-    j = rng.random() * (i + 1) | 0;
+    j = Math.random() * (i + 1) || 0;
     swap = array[i];
     array[i] = array[j];
     array[j] = swap;
   }
-  console.log(array);
   return array;
 }
 
@@ -28,10 +26,11 @@ function shuffle (array, rng) {
 function getQuotes(p) {
 
     var leon = [],
-        shuffled = shuffle(quotes);
+        shuffled = shuffle(quotes),
+        i;
 
     for (i = 0; i < parseInt(p); i++) {
-      leon.push('<p>' + quotes[i] + '</p>');
+      leon.push('<p>' + shuffled[i] + '</p>');
     }
 
     return leon;
@@ -41,19 +40,18 @@ function getQuotes(p) {
 $(document).ready(function() {
 
     $(".quantity--plus").click(function() {
-      p++
+      p++;
       $(".quantity__buttons input").attr("value", p);
     });
 
     $(".quantity--minus").click(function() {
-      p--
+      p--;
       $(".quantity__buttons input").attr("value", p);
     });
 
     //Get the quotes
     $.getJSON('js/quotes.json', function(data) {
          quotes = data.leon;
-         console.log(quotes);
     });
 
 
@@ -61,7 +59,7 @@ $(document).ready(function() {
     // When the okay button is clicked...
     $(".okay__button").click(function() {
         // Get the number of required paragraphs
-        p = parseInt($(".quantity__buttons input").attr("value"))
+        p = parseInt($(".quantity__buttons input").attr("value"));
         // Send 
         var leon = getQuotes(p);
 

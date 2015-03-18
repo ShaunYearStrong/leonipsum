@@ -1,472 +1,543 @@
 html {
-  font-size: 62.5%;
-  /* 1 */
+   font-size: 62.5%; 
+
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+
+html,  body,  div,  span,  applet,  object,  iframe, 
+h1,  h2,  h3,  h4,  h5,  h6,  p,  blockquote,  pre, 
+a,  abbr,  acronym,  address,  big,  cite,  code, 
+del,  dfn,  em,  img,  ins,  kbd,  q,  s,  samp, 
+small,  strike,  strong,  sub,  sup,  tt,  var, 
+b,  u,  i,  center, 
+dl,  dt,  dd,  ol,  ul,  li, 
+fieldset,  form,  label,  legend, 
+table,  caption,  tbody,  tfoot,  thead,  tr,  th,  td, 
+article,  aside,  canvas,  details,  embed, 
+figure,  figcaption,  footer,  header,  hgroup, 
+menu,  nav,  output,  ruby,  section,  summary, 
+time,  mark,  audio,  video {
+   margin: 0; 
+   padding: 0; 
+   border: 0; 
+   font-size: 100%; 
+   font: inherit; 
+   vertical-align: baseline; 
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+
+article,  aside,  details,  figcaption,  figure, 
+footer,  header,  hgroup,  menu,  nav,  section {
+   display: block; 
 }
 
 body {
-  line-height: 1;
+   line-height: 1; 
 }
 
-ol, ul {
-  list-style: none;
+html,  body {
+   height: 100%; 
 }
 
-blockquote, q {
-  quotes: none;
+ol,  ul {
+   list-style: none; 
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+blockquote,  q {
+   quotes: none; 
+}
+
+blockquote:before,  blockquote:after, 
+q:before,  q:after {
+   content: ''; 
+   content: none; 
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+   border-collapse: collapse; 
+   border-spacing: 0; 
 }
 
-h1, h2, h3, h4 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  line-height: 1.4;
-  letter-spacing: -1px;
-}
-
-h1 {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-bottom: 24px;
-  /* 9 */
-  margin-bottom: 2.4rem;
-  /* 9 */
-}
-h1 a {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  font-size: 73px;
-  /* 9 */
-  font-size: 7.3rem;
-  /* 9 */
-  text-transform: uppercase;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
+h1,  h2,  h3,  h4 {
+   font-family: "Oswald", Helvetica, Arial, sans-serif; 
+   line-height: 1.4; 
+   letter-spacing: -1px; 
+   text-align: center; 
 }
 
 h2 {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  font-size: 25px;
-  /* 9 */
-  font-size: 2.5rem;
-  /* 9 */
-  font-weight: normal;
+
+
+
+
+
+
+   font-size: 20px; 
+
+   font-size: 2rem; 
+
+   font-weight: normal; 
 }
 h2 strong {
-  font-weight: 700;
+   font-weight: 700; 
 }
 
 p a {
-  color: #cfcfcf;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+   color: #cfcfcf; 
+   font-weight: 700; 
+   text-decoration: none; 
+   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); 
+   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); 
 }
 p a:hover {
-  color: #b5493d;
-  border-bottom: solid 1px white;
-  cursor: pointer;
+   color: #ad9f72; 
+   border-bottom: solid 1px white; 
+   cursor: pointer; 
 }
 
 input {
-  background: none;
-  border: 0;
+   background: none; 
+   border: 0; 
 }
 
 ::-webkit-input-placeholder {
-  color: white;
+   color: white; 
 }
 
 :-moz-placeholder {
-  /* Firefox 18- */
-  color: white;
+
+   color: white; 
 }
 
 ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: white;
+
+   color: white; 
 }
 
 :-ms-input-placeholder {
-  color: white;
+   color: white; 
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+@media all and (min-width: 600px) {
+   h1, h2, h3, h4 {
+       text-align: left; 
+   }
+
+   h1 {
+
+
+
+
+
+
+
+    font-size: 10.0rem; 
+    color: #ad9f72; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    letter-spacing: -2px; 
+    line-height: 112px; 
+
 }
 
+h1 span{
+   color: #fff; 
+   font-weight:500; 
+}
+
+h2 {
+
+
+
+
+
+
+
+    font-size: 3.8rem; 
+    font-weight: 300; 
+
+}
+}
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; 
+  box-sizing: border-box; 
+}
+
+*,  *:before,  *:after {
+  box-sizing: inherit; 
 }
 
 body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-size: 1.8em;
-  color: white;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  background: url("/img/bg-1.jpg") no-repeat left center fixed #030406;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-bottom: 100px;
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased; 
+  font-size: 1.8em; 
+  color: white; 
+  font-family: "Oswald", Helvetica, Arial, sans-serif; 
+  background: url("../img/bg-1.jpg") no-repeat left center fixed #030406; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
 }
 
 .wrap {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
+   overflow: hidden; 
+   margin: 20px 15px; 
+   max-width: 1200px; 
 }
 
-.one-half {
-  width: 45%;
-  margin: 150px 0 0 10%;
-  float: left;
-}
-.one-half:first-child {
-  margin-left: 0;
+.header {
+   margin-bottom: 25px; 
 }
 
-.generate span, .generate input {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  font-size: 25px;
-  /* 9 */
-  font-size: 2.5rem;
-  /* 9 */
-  color: white;
+@media all and (min-width: 600px) {
+   .wrap {
+       width: 90%; 
+       min-height: 100%; 
+       margin: 0 auto -30px; 
+   }
+
+   .one-half {
+       width: 45%; 
+       margin: 120px 0 0 10%; 
+       float: left; 
+   }
+   .one-half:first-child {
+       margin-left: 0; 
+   }
+}
+
+.generate {
+   -webkit-transition: all .1s ease-in-out; 
+   -moz-transition: all .1s ease-in-out; 
+   -ms-transition: all .1s ease-in-out; 
+   -o-transition: all .1s ease-in-out; 
+   margin-bottom: 60px; 
+}
+
+.generate span,  .generate input {
+
+
+
+
+
+
+   font-size: 25px; 
+
+   font-size: 2.5rem; 
+
+   color: white; 
+}
+.generate span {
+  display: block; 
+  text-align: center; 
 }
 .generate .quantity {
-  clear: both;
-  overflow: hidden;
-  line-height: 35px;
-  margin-bottom: 40px;
+  clear: both; 
+  overflow: hidden; 
+  line-height: 35px; 
+  margin-bottom: 25px; 
 }
 .generate .quantity .quantity__buttons {
-  float: right;
+  width: 225px; 
+  overflow: hidden; 
+  margin: 15px auto; 
 }
 .generate .quantity .quantity__buttons input {
-  margin: 0 45px;
+  margin: 0 45px; 
 }
-.generate .quantity .quantity__buttons input, .generate .quantity .quantity__buttons button {
-  width: 35px;
-  height: 35px;
-  float: left;
-  text-align: center;
+.generate .quantity .quantity__buttons input,  .generate .quantity .quantity__buttons button {
+  width: 45px; 
+  height: 45px; 
+  float: left; 
+  text-align: center; 
+  font-family: "Oswald", Helvetica, Arial, sans-serif; 
 }
 .generate .quantity .quantity__buttons button {
-  border: 0;
-  border-radius: 2px;
-  background: #676767;
-  cursor: pointer;
-  position: relative;
+  border: 0; 
+  border-radius: 100px; 
+  background: #ad9f72; 
+  cursor: pointer; 
+  position: relative; 
+  outline: 0; 
 }
 .generate .quantity .quantity__buttons button i {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  width: 21px;
-  height: 21px;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  margin-right: -10.5px;
-  margin-top: -10.5px;
-  background-image: url("/img/sprite.png");
-  background-repeat: no-repeat;
+  display: inline-block; 
+  vertical-align: baseline; 
+  zoom: 1; 
+  *display: inline; 
+  *vertical-align: auto; 
+  width: 21px; 
+  height: 21px; 
+  position: absolute; 
+  top: 50%; 
+  right: 50%; 
+  margin-right: -10.5px; 
+  margin-top: -10.5px; 
+  background-image: url("../img/sprite.png"); 
+  background-repeat: no-repeat; 
 }
 .generate .quantity .quantity__buttons button.quantity--minus i {
-  background-position: 0 -41px;
+   background-position: 0 -41px; 
 }
 .generate .quantity .quantity__buttons button.quantity--minus:hover i {
-  background-position: -50px -41px;
+   background-position: -50px -41px; 
 }
 .generate .quantity .quantity__buttons button.quantity--plus i {
-  background-position: 0 0;
+   background-position: 0 0; 
 }
 .generate .quantity .quantity__buttons button.quantity--plus:hover i {
-  background-position: -50px 0;
+   background-position: -50px 0; 
 }
 .generate .quantity .quantity__buttons button:hover {
-  background: #b5493d;
+   background: #eb4f4f; 
 }
 .generate .okay__text {
-  color: lightgrey;
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 40px;
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  font-size: 20px;
-  /* 9 */
-  font-size: 2rem;
-  /* 9 */
+   color: lightgrey; 
+   text-align: center; 
+   margin-bottom: 16px; 
+
+
+
+
+
+
+   font-size: 18px; 
+
+   font-size: 1.8rem; 
+
 }
+
+.okay__button,  .quantity__buttons button {
+    -webkit-transition: all .1s ease-in-out; 
+    -moz-transition: all .1s ease-in-out; 
+    -ms-transition: all .1s ease-in-out; 
+    -o-transition: all .1s ease-in-out; 
+}
+
 .generate .okay__button {
-  display: block;
-  border: 0;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 85px;
-  color: white;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  font-size: 25px;
-  /* 9 */
-  font-size: 2.5rem;
-  /* 9 */
-  cursor: pointer;
-  margin-bottom: 40px;
+    display: block; 
+    border: 0; 
+    border-radius: 100px; 
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    max-width: 280px; 
+    height: 60px; 
+    color: white; 
+    font-family: "Oswald", Helvetica, Arial, sans-serif; 
+    font-size: 2rem; 
+    line-height: 46px; 
+    cursor: pointer; 
+    margin: 0 auto; 
+    outline: 0; 
 }
 .generate .okay__button i {
-  background-image: url("/img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: 0 -100px;
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  width: 33px;
-  height: 33px;
-  margin-left: 10px;
-  position: relative;
-  bottom: -8.25px;
+  background-image: url("../img/sprite.png"); 
+  background-repeat: no-repeat; 
+  background-position: 0 -100px; 
+  display: inline-block; 
+  vertical-align: baseline; 
+  zoom: 1; 
+  *display: inline; 
+  *vertical-align: auto; 
+  width: 33px; 
+  height: 33px; 
+  margin-left: 10px; 
+  position: relative; 
+  bottom: -8.25px; 
 }
 .generate .okay__button:hover {
-  background: rgba(0, 0, 0, 0.8);
+   background: rgba(0, 0, 0, 0.8); 
 }
 .generate .generate__text {
-  border: 1px dashed #b5493d;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 35px 35px 5px;
-  border-radius: 5px;
-  max-height: 580px;
-  overflow: auto;
+    border: 1px dashed #ad9f72; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 30px 30px 5px; 
+    border-radius: 5px; 
+    overflow: visible; 
+    margin-top: 30px;
+    position: relative; 
+}
+.generate .generate__text:before {
+    display: block;
+    content: '';
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -3px -72px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -8px;
+    left: 20px;
 }
 .generate .generate__text p {
-  color: lightgrey;
-  font-style: italic;
-  margin-bottom: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: lightgrey; 
+    margin-bottom: 20px; 
+    line-height: 22px; 
+    font-size: 1em; 
+}
+.generate .generate__text .empty-state {
+    text-align:center; 
+    color: #999; 
 }
 
+
+@media all and (min-width: 600px) {
+   .quantity .quantity__buttons {
+   }
+}
 footer {
-  position: absolute;
-  bottom: 0;
-  right: 0px;
-  padding: 20px 30px 20px 20px;
+   clear: both; 
 }
 footer p {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  font-size: 14px;
-  /* 9 */
-  font-size: 1.4rem;
-  /* 9 */
-  color: #afafaf;
-  text-align: right;
-  margin: 0;
+
+
+
+
+
+
+   font-size: 12px; 
+
+   font-size: 1.2rem; 
+
+   line-height: 1.2; 
+   color: #afafaf; 
+   font-family:"Helvetica Neue", Helvetica, Arial, Sans-serif; 
+   text-align: center; 
+   margin: 0; 
 }
 
-/*
-Animate.css - http://daneden.me/animate
-LICENSED UNDER THE  MIT LICENSE (MIT)
+@media all and (min-width: 600px) {
+   footer {
+       height: 30px; 
+       margin-right: 5%; 
+   }
+   footer p {
 
-Copyright (c) 2012 Dan Eden
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
+
+
+       font-size: 12px; 
+
+       font-size: 1.2rem; 
+
+       text-align: right; 
+   }
+}
+
 .animated {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-fill-mode: both;
+   -webkit-animation-duration: 1s; 
+   -moz-animation-duration: 1s; 
+   -ms-animation-duration: 1s; 
+   animation-duration: 1s; 
+   -webkit-animation-fill-mode: both; 
+   -moz-animation-fill-mode: both; 
+   -ms-animation-fill-mode: both; 
+   animation-fill-mode: both; 
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+   0% {
+       opacity: 0; 
+   }
 
-  100% {
-    opacity: 1;
-  }
+   100% {
+       opacity: 1; 
+   }
 }
 
 @-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+   0% {
+       opacity: 0; 
+   }
 
-  100% {
-    opacity: 1;
-  }
+   100% {
+       opacity: 1; 
+   }
 }
 
 @-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+   0% {
+       opacity: 0; 
+   }
 
-  100% {
-    opacity: 1;
-  }
+   100% {
+       opacity: 1; 
+   }
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+   0% {
+       opacity: 0; 
+   }
 
-  100% {
-    opacity: 1;
-  }
+   100% {
+       opacity: 1; 
+   }
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  animation-name: fadeIn;
+   -webkit-animation-name: fadeIn; 
+   -moz-animation-name: fadeIn; 
+   -ms-animation-name: fadeIn; 
+   -o-animation-name: fadeIn; 
+   animation-name: fadeIn; 
 }
 
 @-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-  }
+   0% {
+       opacity: 0; 
+       -webkit-transform: translateY(-20px); 
+   }
 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
+   100% {
+       opacity: 1; 
+       -webkit-transform: translateY(0); 
+   }
 }
 
 @-moz-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(-20px);
-  }
+   0% {
+       opacity: 0; 
+       -moz-transform: translateY(-20px); 
+   }
 
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(0);
-  }
+   100% {
+       opacity: 1; 
+       -moz-transform: translateY(0); 
+   }
 }
 
 @-ms-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -ms-transform: translateY(-20px);
-  }
+   0% {
+       opacity: 0; 
+       -ms-transform: translateY(-20px); 
+   }
 
-  100% {
-    opacity: 1;
-    -ms-transform: translateY(0);
-  }
+   100% {
+       opacity: 1; 
+       -ms-transform: translateY(0); 
+   }
 }
 
 @keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
+   0% {
+       opacity: 0; 
+       transform: translateY(-20px); 
+   }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+   100% {
+       opacity: 1; 
+       transform: translateY(0); 
+   }
 }
 
 .fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  -moz-animation-name: fadeInDown;
-  -ms-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+   -webkit-animation-name: fadeInDown; 
+   -moz-animation-name: fadeInDown; 
+   -ms-animation-name: fadeInDown; 
+   animation-name: fadeInDown; 
 }
